@@ -5,7 +5,7 @@ RUN yum install -y kazoo-bigcouch-R15B
 
 ADD entrypoint.sh /root/
 
-VOLUME ["/srv"]
+VOLUME ["/srv", "/var/log"]
 
 ENTRYPOINT ["/root/entrypoint.sh"]
 
