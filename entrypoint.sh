@@ -2,5 +2,5 @@
 
 service bigcouch start
 
-exec "$@"
+exec /bin/bash "$@"
 
