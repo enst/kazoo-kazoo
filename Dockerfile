@@ -1,4 +1,4 @@
-FROM bingli/kazoo-installer
+FROM bingli/kazoo-base
 MAINTAINER Bing Li <bingli1000@gmail.com>
 
 RUN yum install -y kazoo-bigcouch-R15B
