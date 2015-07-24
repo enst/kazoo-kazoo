@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bigcouch
+service bigcouch start
 
 exec /bin/bash
 
