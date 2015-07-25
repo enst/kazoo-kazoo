@@ -1,2 +1,2 @@
-# kazoo-bigcouch
-Docker image for 2600Hz/Kazoo bigouch
+# kazoo-kazoo
+Docker image for 2600Hz/Kazoo kazoo
