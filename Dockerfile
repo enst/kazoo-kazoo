@@ -5,7 +5,7 @@ RUN yum -y --nogpgcheck localinstall http://repo.2600hz.com/Stable/CentOS_6/x86_
 
 ADD entrypoint.sh /root/
 
-VOLUME ["/var/log"]
+VOLUME ["/var/lib/rabbitmq", "/opt/kazoo/log", "/var/log/2600hz"]
 
 ENTRYPOINT ["/root/entrypoint.sh"]
 
