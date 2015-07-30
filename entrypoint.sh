@@ -5,6 +5,7 @@ chown rabbitmq:daemon /var/lib/rabbitmq/ -R \
 
 sed -i '/port/s/15984/5984/' /etc/kazoo/config.ini 
 sed -i '/port/s/15986/5986/' /etc/kazoo/config.ini 
+sed -i "/cookie/s/change_me/$COOKIE/" /etc/kazoo/config.ini 
 
 service rabbitmq-server restart 
 sleep 5
