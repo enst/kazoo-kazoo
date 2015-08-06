@@ -5,7 +5,7 @@ RUN yum install -y kazoo-R15B
 
 ADD entrypoint.sh firsttime.sh /root/
 
-VOLUME ["/var/lib/rabbitmq", "/opt/kazoo/log", "/var/log/2600hz"]
+VOLUME ["/var/lib/rabbitmq", "/opt/kazoo/log", "/var/log/2600hz", "/var/www/html"]
 
 ENTRYPOINT ["/root/entrypoint.sh"]
 
