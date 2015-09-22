@@ -1,0 +1,34 @@
+kazoo:
+  image: bingli/kazoo-kazoo
+  net: "container:kazoo_ip"
+  tty: true
+  stdin_open: true
+  env_file: kazoo.env
+
+bigcouch:
+  image: bingli/kazoo-bigcouch
+  net: "container:kazoo_ip"
+  tty: true
+  stdin_open: true
+  env_file: kazoo.env
+  volumes: 
+    - ./srv:/srv
+
+kamailio:
+  image: bingli/kazoo-kamailio
+  net: "container:kazoo_ip"
+  tty: true
+  stdin_open: true
+
+freeswitch:
+  image: bingli/kazoo-freeswitch
+  net: "container:kazoo_ip"
+  tty: true
+  stdin_open: true
+  env_file: kazoo.env
+
+ui:
+  image: bingli/kazoo-monster-ui
+  net: "container:kazoo_ip"
+  tty: true
+  stdin_open: true
